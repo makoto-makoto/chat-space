@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.chat-main{
+  float: right;
+  height: 100px;
+  width: calc(100vw - 300px);
+
+  .main-header{
+  border-bottom: solid 1px #eee;
+  padding: 0 40px;
+  height: 100px;
+  width: calc(100vw - 300px);
+  }
+}
+
+.messages{
+  border: #eeeeee;
+  padding: 46px 40px;
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  float: right;
+  width: calc(100vw -300px);
+  overflow: scroll;
+  .mwssage{
+    padding-bottom: 40px;
+  }
+}
+
+.form{
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #ddd;
+  float: right;
+  width: calc(100vw - 300px);
+  .new-message{
+    display: flex;
+  }
+}
