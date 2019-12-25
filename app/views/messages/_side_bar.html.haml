@@ -1,5 +1,14 @@
 .chat-side
   .side-header
     .side-header__box
+      %p.side-header__box--user-name　makoto 
+
+      %ul.side-header__bpx--user-menu 
+        %li.side-header__box__edit-user
+          = link_to "#" do
+            = icon('fas' , 'edit')
+        %li.side-header__box__new-group
+          = link_to "#" do
+            = icon('fas' , 'cog')
   .groups
     .group
