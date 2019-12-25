@@ -15,7 +15,15 @@
       justify-content: space-between;
       width: 100%;
       font-weight: bold;
-      background-color: red;
+      &--user-name{
+        display: flex;
+        li {
+          margin-left: 5px;
+          a {
+            color: white;
+          }
+        }
+      }
     }
   }
 }
