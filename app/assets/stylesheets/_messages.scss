@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.chat-main{
+  float: right;
+  height:100px;
+  width: calc(100vw - 300px);
+
+  .main-header{
+  border-bottom: solid 1px #eee;
+  padding:0 40px;
+  height:100px;
+  width: calc(100vw - 300px);
+  &__left-box{
+     float: left;
+     margin-top: 35px;
+     &--current-group{
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+     }
+     &--member-list{
+      display: flex;
+      font-size: 12px;
+      color: #999999;
+     }
+  }
+  &__edit-btn{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    border: solid 1px blue;
+    position: absolute;
+    right: 40px;
+    color:blue;
+   }
+  }
+}
+
+.messages{
+  border: #eeeeee;
+  padding: 46px 40px;
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  float: right;
+  width: calc(100vw - 300px);
+  overflow: scroll;
+  .message{
+    padding-bottom: 40px;
+    &__up-info{
+      display: flex;
+      margin-bottom: 10px;
+      &--date{
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
+      }
+      &--taker{
+        color: gray;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    &__text{
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form{
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #ddd;
+  float: right;
+  width: calc(100vw - 300px);
+  .new-message{
+    display: flex;
+  }
+  .input-box{
+    width: 100%;
+    position: relative;
+    &__text{
+      height: 50px;
+      width: 100%;
+      padding: 0 40px 0 10px;
+      color: gray;
+      border-style: none;
+    }
+    &__image{
+      font-size: 1.3rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+  .submit-btn{
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,30 @@
+.chat-main   
+  .main-header  
+    .main-header__left-box
+      %h2.main-header__left-box--current-group sample
+      %ul.main-header__left-box--member-list
+        Members:
+        %li.main-header__left-box--member-list__member
+          sannpuru 
+    .main-header__edit-btn 
+      = link_to "#" do
+        Edit
+  .messages
+    .message
+      .message__up-info
+        %p.message__up-info--taker
+          asd
+        %p.message__up-info--date
+          2019/12/25 18:18:18
+      %P.message__text
+        asd
+
+  .form
+    %form.new-message
+      .input-box
+        %input#message_content.input-box__text{name: "message[content]", placeholder: "type amessage", type:"text"}
+
+        .input-box__image
+          = link_to "#" do
+            = icon('fas' , 'image')
+      %input.submit-btn{name: "commit", type: "submit", value: "Send"}

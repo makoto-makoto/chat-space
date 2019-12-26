@@ -1,0 +1,39 @@
+.chat-side{
+  color: white;
+  float: left;
+  .side-header{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+    height: 100px;    
+    width: 300px;
+    background-color: #253141;
+    &__box{
+      display: flex;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      font-weight: bold;
+      &--user-name{
+        display: flex;
+        li {
+          margin-left: 5px;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+  .groups{
+    height: calc(100vh - 100px);
+    padding: 20px 20px 0;
+    background-color: #2F3E51;
+    width: 300px;
+    .group{
+    margin: 0 0 40px;
+    }
+}
