@@ -3,7 +3,7 @@ DB設計
 ## usersテーブル
 |columu|Type|Options|
 |------|----|-------|
-|name|string|index: true, null: false. unigue: true
+|name|string|index: true, null: false. unigue: true｜
 
 ### Association
 - has_many :groups, through: :members
@@ -13,7 +13,7 @@ DB設計
 ## groupsテーブル
 |columu|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique: true
+|name|string|null: false, unique: true｜
 
 ### Association
 - has_many :users, through: :members
