@@ -4,3 +4,7 @@
 @import "./messages";
 @import "./sade-bar";
 @import "./user";
+@import "modules/user";
+// colors.scssとflash.scssをインポート
+@import "config/colors";
+@import "modules/flash";
