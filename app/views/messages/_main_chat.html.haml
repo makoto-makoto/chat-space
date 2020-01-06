@@ -1,30 +1,23 @@
 .chat-main   
   .main-header  
     .main-header__left-box
-      %h2.main-header__left-box--current-group sample
+      %h2.main-header__left-box--current-group 
+        = @group.name
       %ul.main-header__left-box--member-list
         Members:
         %li.main-header__left-box--member-list__member
           sannpuru 
     .main-header__edit-btn 
-      = link_to "#" do
-        Edit
-  .messages
-    .message
-      .message__up-info
-        %p.message__up-info--taker
-          asd
-        %p.message__up-info--date
-          2019/12/25 18:18:18
-      %P.message__text
-        asd
+      = link_to "Edit",edit_group_path(@group),class:"edit"
+  
+  .messages    
+    = render @messages
 
   .form
-    %form.new-message
-      .input-box
-        %input#message_content.input-box__text{name: "message[content]", placeholder: "type amessage", type:"text"}
-
-        .input-box__image
-          = link_to "#" do
-            = icon('fas' , 'image')
-      %input.submit-btn{name: "commit", type: "submit", value: "Send"}
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
