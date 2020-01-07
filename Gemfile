@@ -59,6 +59,7 @@ gem 'i18n'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'mini_magick'
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
@@ -66,4 +67,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
+end
+group :test, :development do 
+  gem 'capybara'
 end
