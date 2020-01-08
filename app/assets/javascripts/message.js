@@ -89,10 +89,10 @@ var reloadMessages = function() {
       $(".form__submit").prop("disabled", false);
     }
   })
-  .fail(function() {
-    console.log('error');
-  });
 };
+    $.fail(function() {
+      console.log('error');
+      });
     setInterval(reloadMessages, 7000);
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
       setInterval(reloadMessages, 7000);
