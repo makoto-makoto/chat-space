@@ -8,35 +8,38 @@
   width: calc(100vw - 300px);
 
   .main-header{
-  border-bottom: solid 1px #eee;
-  padding:0 40px;
-  height:100px;
-  width: calc(100vw - 300px);
-  &__left-box{
-     float: left;
-     margin-top: 35px;
-     &--current-group{
-        font-size: 20px;
-        color: #333;
-        margin-bottom: 15px;
-     }
-     &--member-list{
-      display: flex;
-      font-size: 12px;
-      color: #999999;
-     }
+    border-bottom: solid 1px #eee;
+    padding:0 40px;
+    height:100px;
+    width: calc(100vw - 300px);
+    &__left-box{
+      float: left;
+      margin-top: 35px;
+      &--current-group{
+          font-size: 20px;
+          color: #333;
+          margin-bottom: 15px;
+      }
+      &--member-list{
+        display: flex;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    &__edit{
+      &__edit-btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 30px;
+        border: solid 1px blue;
+        position: absolute;
+        right: 40px;
+        color:blue;
+      }
+    }
   }
-  &__edit-btn{
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    margin-top: 30px;
-    border: solid 1px blue;
-    position: absolute;
-    right: 40px;
-    color:blue;
-   }
-  }
+  
 }
 
 .messages{
@@ -92,8 +95,23 @@
       font-size: 20px;
       line-height: 50px;
     }
+<<<<<<< Updated upstream
     .hidden {
       display: none;
+=======
+    &__image{
+      font-size: 1.3rem;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      // display: none;
+      // // display: inline-block;
+      .hidden {
+        display: none;
+      }
+
+>>>>>>> Stashed changes
     }
   }
   &__submit {
