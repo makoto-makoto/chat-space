@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 DB設計
 
 ## usersテーブル
@@ -41,3 +42,5 @@ DB設計
 ### Association
 - belongs_to :group
 - belongs_to :user
+=======
+>>>>>>> Stashed changes
