@@ -7,7 +7,6 @@
         Members:
         %li.main-header__left-box--member-list__member
           sannpuru 
-<<<<<<< Updated upstream
     .main-header__edit-btn 
       = link_to "Edit",edit_group_path(@group),class:"edit"
   
@@ -22,28 +21,3 @@
           = icon('fas', 'image', class: 'icon')
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'form__submit'
-=======
-    = link_to "#",class: "main-header__edit" do
-      .main-header__edit__edit-btn 
-        Edit
-  .messages
-    .message
-      .message__up-info
-        %p.message__up-info--taker
-          asd
-        %p.message__up-info--date
-          2019/12/25 18:18:18
-      %P.message__text
-        asd
-
-  .form
-    %form.new-message
-      .input-box
-        %input#message_content.input-box__text{name: "message[content]", placeholder: "type amessage", type:"text"}
-
-        .input-box__image
-          %label{class: "input-box__image"}
-            = icon('fas', 'image', class: "file")
-            %input.hidden{type:"file"}
-      %input.submit-btn{name: "commit", type: "submit", value: "Send"}
->>>>>>> Stashed changes

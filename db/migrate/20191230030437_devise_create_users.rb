@@ -4,10 +4,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
   def change
     create_table :users do |t|
       ## Database authenticatable
-<<<<<<< Updated upstream:db/migrate/20191226025604_devise_create_users.rb
       t.string :name,               null: false, unique: true, railsindex: true
-=======
->>>>>>> Stashed changes:db/migrate/20191230030437_devise_create_users.rb
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
       t.string :name, null: false

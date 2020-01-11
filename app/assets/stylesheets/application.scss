@@ -4,15 +4,7 @@
 @import "./font-awesome";
 @import "./messages";
 @import "./sade-bar";
-<<<<<<< Updated upstream
-@import "./user";
+@import "modules/user";
 @import "modules/user";
 @import "modules/group";
-=======
-// @import "./modules/chat";
-@import "./modules/user";
-// @import "./user";
-// colors.scssとflash.scssをインポート
-@import "config/colors";
->>>>>>> Stashed changes
 @import "modules/flash";
