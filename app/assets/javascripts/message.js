@@ -89,10 +89,10 @@ var reloadMessages = function() {
       $(".form__submit").prop("disabled", false);
     }
   })
+  .fail(function() {
+    alert('自動更新に失敗しました');
+  });
 };
-    $.fail(function() {
-      alert('自動更新に失敗しました');
-      });
     setInterval(reloadMessages, 7000);
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
       setInterval(reloadMessages, 7000);
