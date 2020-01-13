@@ -6,15 +6,22 @@
   float: right;
   height:100vh;
   width: calc(100vw - 300px);
+  
 
   .main-header{
     border-bottom: solid 1px #eee;
     padding:0 40px;
     height:100px;
     width: calc(100vw - 300px);
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    overflow: scroll;
+    
     &__left-box{
       float: left;
       margin-top: 35px;
+      
       &--current-group{
           font-size: 20px;
           color: #333;
@@ -27,7 +34,7 @@
       }
     }
     &__edit{
-      &__edit-btn{
+      &-btn{
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
@@ -35,7 +42,10 @@
         border: solid 1px blue;
         position: absolute;
         right: 40px;
-        color:blue;
+        text-decoration: none;
+      }
+      &__edit-btn > a{
+        text-decoration: none;
       }
     }
   } 
@@ -110,8 +120,8 @@
   }
 }
 
-.edit{
-  color:blue;
+.main-header__edit-btn > a{
+  text-decoration: none;
 }
 
 
