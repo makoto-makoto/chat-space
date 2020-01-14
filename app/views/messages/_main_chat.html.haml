@@ -5,11 +5,11 @@
         = @group.name
       %ul.main-header__left-box--member-list
         Members:
+        = @group.name
         %li.main-header__left-box--member-list__member
-          sannpuru 
     .main-header__edit-btn 
       = link_to "Edit",edit_group_path(@group),class:"edit"
-  
+      
   .messages    
     = render @messages
 
